@@ -1,0 +1,44 @@
+:root {
+    --dark:#08526d;
+    --red:#ec1c23;
+    --grag:#EEE
+}
+
+/* Start Upper Bar */
+.upper-bar {
+    background-color: var(--dark);
+}
+@media (max-width:767px) {
+    .upper-bar .row div:first-child {
+        text-align: center;
+    }
+    
+    .upper-bar .row div:last-child {
+        display: block !important;
+        justify-content: stretch !important;
+    }
+}
+.upper-bar .row div:last-child span:last-child {
+    padding:3px
+}
+/* End Upper Bar */
+/* Start Navbar */
+.navbar .navbar-brand span:first-child {
+    color:var(--dark);
+}
+.navbar .navbar-brand span:last-child {
+    color:var(--red);
+    margin-left:-5px
+}
+.navbar .navbar-nav li a{
+    color:var(--dark)
+}
+.navbar .navbar-nav .nav-link.active {
+    color:var(--red)
+}
+/* End Navbar */
+/* Start Slider */
+.slider {
+    background-color:var(--grag)
+}
+/* End Slider */
