@@ -16,7 +16,7 @@ function showAndHide() {
     links.forEach((link) => {
         link.onclick = function() {
             // Add and Remove Active Class Depends on Clicking
-            links.forEach((li) =>li.classList.remove("active"))
+            removeActive(links);
             link.classList.add("active")
             
             // Hide And Show Boxes Depends on Data-section
@@ -25,3 +25,7 @@ function showAndHide() {
     })
 }
 showAndHide()  
+
+function removeActive(array) {
+    array.forEach((ele) =>ele.classList.remove("active"));
+}

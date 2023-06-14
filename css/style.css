@@ -190,3 +190,62 @@ body {
     transition: .5s;
 }
 /* End Work */
+/* Start Latest Posts */
+.latest-post .row  {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding:20px 10px;
+    transition:.5s;
+    border-radius: 5px;
+    background-color: #f0f5f7;
+}
+.latest-post .row:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.latest-post .row .post h5 {
+    color:var(--dark);
+}
+.latest-post .row .post h6 {
+    color:#BBB
+}
+.latest-post .row .post p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+.latest-post .row .post a {
+    text-decoration: none;
+    color:var(--red);
+    font-weight: bold;
+}
+/* Start Latest Posts */
+/* Start Testimonails */
+.testimonials .carousel .info {
+    z-index: 2;
+    color:white;
+}
+.testimonials .carousel .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+}
+.testimonials .carousel .one {
+    background-size: cover;
+    background-image: url('../img/testimonial.jpg');
+}
+.testimonials .carousel .one .info img {
+    width:120px
+}
+.testimonials .carousel .one .info h5 {
+    letter-spacing: 2px;
+}
+.testimonials .carousel .one .info p:first-of-type {
+    font-size: 14px;
+}
+.testimonials .carousel .one .info p:last-of-type {
+    max-width: 70%;
+    line-height: 1.8;
+}
+@media (max-width:767px) {
+    .testimonials .carousel .one .info p:last-of-type {
+        font-size:14px
+    }
+}
+/* End Testimonails */
