@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 :root {
     --dark:#08526d;
     --red:#ec1c23;
@@ -8,6 +11,7 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    height: 5000px;
 }
 /* Start Upper Bar */
 .upper-bar {
@@ -92,3 +96,97 @@ body {
     background-color: white;
 }
 /* End Slider */
+/* Start Features */
+.features .feature svg {
+    background-color: var(--red);
+    width:30px;
+    height:30px;
+    padding:10px;
+    font-size: 10px;
+}
+.features .feature h3 {
+    color:var(--dark)
+}
+/* End Features */
+/* Start Overview */
+.overview {
+    background-color: #f0f5f7;
+}
+.overview h2,
+.overview p:last-of-type {
+    letter-spacing: 2px;
+}
+.overview p:first-of-type {
+    line-height: 1.8;
+}
+.overview button {
+    background-color:var(--red);
+    border:none;
+    padding:4px 30px
+}
+/* End Overview */
+/* Start Work */
+.work h2,
+.work ul li {
+    letter-spacing: 2px;
+}
+.work p {
+    line-height: 1.8;
+}
+@media (max-width:767px) {
+    .work ul {
+        flex-wrap: wrap;
+    }
+    .work ul li {
+        margin-bottom: 10px;
+    }
+}
+.work ul li {
+    color:var(--dark);
+    border:1px solid var(--dark);
+    padding:5px 15px;
+    cursor: pointer;
+    transition: .5s
+}
+.work ul li.active,
+.work ul li:hover {
+    background-color: var(--red);
+    color:white;
+    border:none;   
+}
+@media (max-width:991px) {
+    .work ul li {
+        padding: 7px;
+        letter-spacing: normal;
+    }
+}
+.work .row {
+
+    transition: .5s;
+}
+.work .box {
+    transition: .5s;
+    cursor: pointer;
+}
+.work .box:hover .overlay {
+    transition: .5s;
+    display: block;
+}
+.work .box .overlay {
+    background-color: #08526dbf;
+    transition: .5s;
+    display: none;
+}
+.work .box .overlay::before {
+    font-family: "Font Awesome 5 Free";
+    content:"\f065";
+    font-weight: 900;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:50px;
+    transition: .5s;
+}
+/* End Work */
