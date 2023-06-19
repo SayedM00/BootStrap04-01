@@ -226,26 +226,74 @@ body {
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1;
 }
-.testimonials .carousel .one {
+.testimonials .carousel-item  {
     background-size: cover;
-    background-image: url('../img/testimonial.jpg');
+
 }
-.testimonials .carousel .one .info img {
-    width:120px
+.testimonials .carousel .one {
+    position: absolute;
+    background-image: url('../img/slider01.jpg');
+    
 }
-.testimonials .carousel .one .info h5 {
-    letter-spacing: 2px;
+.testimonials .carousel .two {
+    background-image: url('../img/slider02.jpg');
 }
-.testimonials .carousel .one .info p:first-of-type {
-    font-size: 14px;
+.testimonials .carousel .three {
+    background-image: url('../img/slider03.jpg');
 }
-.testimonials .carousel .one .info p:last-of-type {
-    max-width: 70%;
-    line-height: 1.8;
-}
-@media (max-width:767px) {
-    .testimonials .carousel .one .info p:last-of-type {
-        font-size:14px
-    }
+.testimonials .carousel .person {
+    top:50%;
+    left:50%;
+    z-index: 2;
+    width:60%;
+    transform: translate(-50%, -50%);
+    color:white
 }
 /* End Testimonails */
+/* Start Prices */
+.prices h2 {
+    letter-spacing: 2px;
+}
+.prices p:first-of-type {
+    line-height: 1.8;
+}
+@media (min-width:768px) and (max-width:991px) {
+    .plane {
+        width:47%
+    }
+}
+@media (min-width:992px) {
+    .plane {
+        width:30%
+    }
+}
+.prices .title h6,
+.prices .price {
+    color:var(--dark);
+}
+.prices .title h6 {
+    font-weight: bold;
+    font-size: 25px;
+}
+.prices .price {
+    font-size: 40px;
+}
+.prices .price span {
+    font-size: 14px;
+}
+.prices .price.active {
+    background-color: red;
+    color:white;
+    padding: 0;
+}
+.prices .plane.middle > a {
+    background-color: var(--dark);
+    
+}
+.prices a {
+    background-color: red;
+    color:white;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+/* End Prices */
