@@ -297,3 +297,54 @@ body {
     cursor: pointer;
 }
 /* End Prices */
+/* Start Choose Us */
+.choose-us img{
+    max-width: 100%;
+}
+.choose-us .col-6,
+.choose-us .row {
+    padding:0
+}
+.choose-us div:last-of-type {
+    background-color: var(--dark);
+}
+.choose-us div p {
+    line-height: 2;
+}
+.choose-us button {
+    background-color: red;
+    color:white;
+    padding:10px 20px;
+    font-weight: bold;
+}
+/* End Choose Us */
+/* Start statistics */
+.statistics {
+    color:var(--dark)
+}
+.statistics .number {
+    display:block;
+    font-size:40px;
+    font-weight: bold;
+}
+.statistics p:first-of-type {
+    color:var(--red)
+}
+/* End statistics */
+/* Start contact-us */
+.contact-us {
+    background-color:red;
+}
+.contact-us button {
+    border:1px solid white;
+    padding:10px 20px;
+    background-color:transparent;
+    color:white;
+    font-weight: bold;
+    transition:.3s
+}
+.contact-us button:hover {
+    background-color:white;
+    color:var(--red)
+}
+/* End contact-us */
